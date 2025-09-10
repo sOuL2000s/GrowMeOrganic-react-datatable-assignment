@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* Custom card styling for PrimeReact */
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+}
+
+.p-error {
+  color: var(--red-500);
+}
+
+/* Ensure the DataTable fills its container width */
+.p-datatable {
+  width: 100%;
+}
+
+/* Custom ScrollPanel styling to blend with PrimeReact theme */
+.custom-scrollpanel .p-scrollpanel-wrapper {
+  border-right: 9px solid var(--surface-border); /* Visually separate scrollbar area */
+}
+
+.custom-scrollpanel .p-scrollpanel-bar {
+  background-color: var(--primary-color, #6366f1); /* Use primary color from theme */
+  opacity: 0.8;
+  transition: background-color .2s;
+}
+
+.custom-scrollpanel .p-scrollpanel-bar:hover {
+  background-color: var(--primary-700, #4f46e5); /* Darker primary on hover */
+}
+
+/* PrimeFlex utilities like p-gap-2 for spacing between chips */
+.p-gap-2 > .p-chip {
+  margin: 0.5rem; /* Ensure consistent spacing around chips */
+}
